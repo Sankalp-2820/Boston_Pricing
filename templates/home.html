@@ -1,3 +1,56 @@
-<h1>
-    Hello Bhosdike asdfasdf
-</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boston Price Prediction Model</title>
+</head>
+<body>
+    <div class = "login">
+        <h1>Boston Price Prediction Model</h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <label for="crim">CRIM:</label>
+            <input type="text" id="crim" placeholder = "CRIM" required = "required" name="crim"><br><br>
+
+            <label for="zn">ZN:</label>
+            <input type="text" id="zn" placeholder = "ZN" required = "required" name="zn"><br><br>
+
+            <label for="indus">INDUS:</label>
+            <input type="text" id="indus" placeholder = "INDUS" required = "required" name="indus"><br><br>
+
+            <label for="chas">CHAS:</label>
+            <input type="text" id="chas" placeholder = "CHAS" required = "required" name="chas"><br><br>
+
+            <label for="nox">NOX:</label>
+            <input type="text" id="nox" placeholder = "NOX" required = "required" name="nox"><br><br>
+
+            <label for="rm">RM:</label>
+            <input type="text" id="rm" placeholder = "RM" required = "required" name="rm"><br><br>
+
+            <label for="age">AGE:</label>
+            <input type="text" id="age" placeholder = "AGE" required = "required" name="age"><br><br>
+
+            <label for="dis">DIS:</label>
+            <input type="text" id="dis" placeholder = "DIS" required = "required" name="dis"><br><br>
+
+            <label for="rad">RAD:</label>
+            <input type="text" id="rad" placeholder = "RAD" required = "required" name="rad"><br><br>
+
+            <label for="tax">TAX:</label>
+            <input type="text" id="tax" placeholder = "TAX" required = "required" name="tax"><br><br>
+
+            <label for="ptratio">PTRATIO:</label>
+            <input type="text" id="ptratio" placeholder = "PTRATIO" required = "required" name="ptratio"><br><br>
+
+            <label for="b">B:</label>
+            <input type="text" id="b" placeholder = "B" required = "required" name="b"><br><br>
+
+            <label for="lstat">LSTAT:</label>
+            <input type="text" id="lstat" placeholder = "LSTAT" required = "required" name="lstat"><br><br>
+            <button type = "submit" class = "mera button"> Predict </button>
+        </form>
+        <br>
+        <br>
+
+    </div>   
+    {{prediction_text}}
+</body>
+</html>
